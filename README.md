@@ -19,6 +19,8 @@ This app builds a secure and scalable RESTful API that allows users to create, r
 - POST /api/v1/share/:id: share a note with another user for the authenticated user.
 - GET /api/v1/search?keyword=xyz: search for notes based on keywords for the authenticated user. 
 
+- All the Test have been written in test.js file 
+
 
 
 
