@@ -35,6 +35,9 @@ const getNotes = async (req, res, next) => {
     // getting the notes of logged in user
     if (userFound) {
       const notes = await Note.find({ createdBy: userFound });
+      if(notes.length==0){
+        throw new Error("no notes created yet");
+      }
       return res.status(200).json({
         status: "success",
         message: "All notes are listed below",
